@@ -18,7 +18,7 @@ export class TestFapiStack extends cdk.Stack {
       runtime: lambda.Runtime.NODEJS_12_X,
       timeout: Duration.seconds(120),
       code: lambda.Code.asset('lambdas.zip'),
-      handler: 'app/contact.main',
+      handler: 'src/contact.main',
       memorySize: 128,
       environment: {
         CORS: JSON.stringify(cors),
