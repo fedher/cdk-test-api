@@ -11,9 +11,8 @@ module.exports = {
       sourceType: 'module',
   },
   rules: {
-    "@typescript-eslint/interface-name-prefix": ["error", { "prefixWithI": "always" }],
     "@typescript-eslint/no-floating-promises": ["error"],
-    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
   }
 };
 
