@@ -1,4 +1,4 @@
-exports.main = async (event: any) => {
+exports.main = async (event) => {
   const data = event.body;
   // echo lambda
   return {
