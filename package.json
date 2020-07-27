@@ -9,7 +9,8 @@
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
-    "deploy": "rm -rf dist && npm run build && cp package.json dist/ && cd dist && npm install --only=production && zip -r ../lambdas.zip app/* node_modules/*"
+    "deploy": "rm -rf dist && npm run build && cp package.json dist/ && cd dist && npm install --only=production && zip -r ../lambdas.zip app/* node_modules/*",
+    "lint": "eslint --ext .ts ."
   },
   "devDependencies": {
     "@aws-cdk/assert": "1.54.0",
